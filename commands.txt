@@ -1,0 +1,71 @@
+
+# Bukkit Server commands
+
+# Give nikmeiser admin/operational rights
+op nikmeiser 
+
+# Minecraft Game commands
+
+# Change game mode
+/gamemode 2
+
+# Game modes
+0 - Survival mode
+1 - Creative mode
+2 - Adventure mode
+3 - Spectator mode
+
+
+
+# Give nikmeiser 1 head of type player and skin the player with the Cave Spider mob
+/give nikmeiser minecraft:skull 1 3 {SkullOwner:MHF_CaveSpider}
+
+# Skull types
+0 - Skeleton skull
+1 - Wither skeleton skull
+2 - Zombie head
+3 - Regular user or mob head
+4 - Creeper head
+
+# Skull owner mob types
+MHF_Blaze 
+MHF_CaveSpider 
+MHF_Chicken 
+MHF_Cow 
+MHF_Enderman 
+MHF_Ghast 
+MHF_Golem 
+MHF_Herobrine 
+MHF_LavaSlime 
+MHF_MushroomCow 
+MHF_Ocelot 
+MHF_Pig 
+MHF_PigZombie 
+MHF_Sheep 
+MHF_Slime 
+MHF_Spider 
+MHF_Squid 
+MHF_Villager 
+MHF_Wither 
+MHF_Cactus 
+MHF_Cake 
+MHF_Chest 
+MHF_Melon 
+MHF_OakLog 
+MHF_Pumpkin 
+MHF_TNT 
+MHF_TNT2
+
+# Summon commands
+/summon EntityHorse ~0 ~1 ~0 {Tame:1} # Tame horse
+/summon EntityHorse ~0 ~1 ~0 {Type:1,Tame:1} # Tame Donkey
+/summon EntityHorse ~0 ~1 ~0 {Type:3,Tame:1} # Tame Zombie Horse
+/summon EntityHorse ~0 ~1 ~0 {Type:4,Tame:1} # Tame Skeleton Horse
+/summon EntityHorse ~0 ~1 ~0 {Type:0,Tame:1,SaddleItem:{id:329}}  # Tame horse with a saddle
+/summon Pig
+
+# Give yourself a golden apple
+/give @p golden_apple 1 1
+
+# Teleport
+/tp <x> <y> <z>
