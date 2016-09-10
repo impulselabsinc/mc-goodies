@@ -2,6 +2,7 @@
 #www.stuffaboutcode.com
 #Raspberry Pi, Minecraft Twitter
 
+# x-95  y+50 z-95
 #import the minecraft.py module from the minecraft directory
 import mcpi.minecraft as minecraft
 #import minecraft block module
