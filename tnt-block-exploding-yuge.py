@@ -9,4 +9,4 @@ x = pos.x + 1
 y = pos.y
 z = pos.z + 1
 
-mc.setBlocks(x, y, z, x+11, y+11, z+11, tnt, 1)
+mc.setBlocks(x, y, z, x+11, y+11, z+11, tnt)
