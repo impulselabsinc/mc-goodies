@@ -1,21 +1,26 @@
 import mcpi.minecraft as minecraft
 import mcpi.block as block
+import time
 
+mc = minecraft.Minecraft.create()
 
-# If you are running this script with the bukkit mod, then use a diamond block as the magic center block for teleporting
-# comment/uncomment below as appropriate
-magic_block = block.DIAMOND_BLOCK # for bukkit server
-#magic_block = block.NETHER_REACTOR_CORE # for raspberry pi
+## Use the code below to figure out where to build your portal
+## Always put the teleport exit in front of the portal so as not to get caught in the loop
+#pos = mc.player.getTilePos()
+#print pos.x
+#print pos.y
+#print pos.z
 
-if __name__ == "__main__": # The script
-    mc = minecraft.Minecraft.create()
-    loc = mc.player.getPos()
-    x = loc.x
-    y = loc.y - 1
-    z = loc.z
-    for z_z in range (int(z-1), int(z+2)):
-        for x_x in range(int(x-1), int(x+2)):
-            mc.setBlock(x_x,y,z_z, block.COBBLESTONE)
-            mc.setBlock(x_x,y+1,z_z, block.AIR)
+diamondPortalExit = (65, -1, 6)
+goldPortalExit = (83, -1, 21)
 
-mc.setBlock(x,y,z, magic_block)
+def teleport(portal):
+    mc.player.setPos(portal)
+
+while True:
+    time.sleep(0.1)
+    pos = mc.player.getTilePos()
+    if pos.x == 83 and pos.y == -1 and pos.z == 19:
+        teleport(diamondPortalExit)
+    if pos.x == 63 and pos.y == -1 and pos.z == 6:
+        teleport(goldPortalExit)

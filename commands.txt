@@ -15,7 +15,22 @@ op nikmeiser
 2 - Adventure mode
 3 - Spectator mode
 
-
+# F3 debug keys - press F3 and the other key at the same time
+F3 + A - Reload all chunks
+F3 + B - Toggle visibility of hitboxes of entities. It also shows which direction entities are looking
+F3 + C - Make a debug crash (press keys for at least 10 seconds and release).
+F3 + D - Clear chat history (including previously typed messages and commands)
+F3 + F - Increases render distance by 1 (Minimum and Maximum are 2-32).
+F3 + [Shift] + F - Decreases render distance by 1 (Min and Max are 2-32).
+F3 + G - Toggles the visible chunk borders around the player.
+F3 + H - Toggle IDs of items, the durability of tools, the armor color and the scale of maps.
+F3 + N - Cycle between Creative and Spectator gamemodes.
+F3 + P - Toggle automatic pause when Minecraft loses focus on / off.
+F3 + Q - Gives help and shows all F3 + key combinations
+F3 + S - Reloads server side modules, textures and sounds.
+F3 + T - Reload textures, models, sounds, and any other resource pack contents.
+[shift] + F3 -  Opens the debug screen with the profiler graph.
+[alt] + F3 - Opens the debug screen with the Frame time graph.
 
 # Give nikmeiser 1 head of type player and skin the player with the Cave Spider mob
 /give nikmeiser minecraft:skull 1 3 {SkullOwner:MHF_CaveSpider}
